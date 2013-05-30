@@ -12,23 +12,28 @@
 	<script type="text/javascript">
 		SyntaxHighlighter.defaults['gutter'] = true;
 		SyntaxHighlighter.defaults['smart-tabs'] = true;
-		jQuery("#nav").sidr()
-
-		
 		SyntaxHighlighter.all();
-		var navigation = responsiveNav("#nav", {animate: true,transition: 400});
+	        $('#responsive-menu-button').sidr({
+		   name: 'sidr-main',
+		   source: '#nav'
+		 });
 	</script>
 	<title>首页</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-	<body>
-    <div id="nav">
+<body>
+	<div id="mobile-header">
+		    <a id="responsive-menu-button" href="#sidr-main">传送门</a>
+       </div>
+	<div id="nav">
+	   <div class='nav'>
 	      <ul>
 	          <li><a href="#">Home</a></li>
 	          <li><a href="#">About</a></li>
 	          <li><a href="#">Projects</a></li>
 	          <li><a href="#">Contact</a></li>
 	     </ul>
+	 <div>
     </div>
 <h1 id="toc_1" class="justcenter">我的Wiki</h1>
 <h3 id="toc_1.0.1"><a href="diary/diary.html">我的日记</a></h3>

@@ -1,33 +1,118 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="Stylesheet" type="text/css" href="../style.css">
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/icon.png"> -->
+	<meta name="description" content="我的WIKI笔记">
+        <meta name="author" content="guotingchaopr@gmail.com">
+	<meta name="application-name" content="guotingchaopr.github.io/GWiki">
+
+	<link type="text/css" rel="stylesheet" href="../style.css">
 	<link type="text/css" rel="stylesheet" href="../styles/shCore.css">
 	<link type="text/css" rel="stylesheet" href="../styles/shThemeDefault.css">
-	<script type="text/javascript" src="../scripts/brush.js"></script>
+	<link type="text/css" rel="stylesheet" href="../styles/slider.css">
+ 	<script type="text/javascript" src="../scripts/jquery.js"></script>
+ 	<script type="text/javascript" src="../scripts/jquery-slider.js"></script>
+        <script type="text/javascript" src="../scripts/brusy.js"></script>
 	<script type="text/javascript">
 		SyntaxHighlighter.config.clipboardSwf = 'http://guotingchaopr.github.io/GWiki/styles/clipboard.swf';
 		SyntaxHighlighter.defaults['gutter'] = true;
 	        SyntaxHighlighter.defaults['smart-tabs'] = true;
 	 	SyntaxHighlighter.all();
-
+                 $('document').ready(function(){
+		 	        $('#responsive-menu-button').sidr({
+		   		name: 'sidr-main',
+		   		source: '#nav'
+			 	});
+		 });
 	</script>
 	<title>2013-05-30</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 	<body>
+	<div id="mobile-header">
+	    <a id="responsive-menu-button" href="#sidr-main">传送门</a>
+        </div>
+	<div id="nav" style="display:none;">
+		   <div class='nav'>
+		   	      <ul>
+		      	          <li><a href="../">首页</a></li>
+		 	          <li><a href="../diary/diary.html">日记目录</a></li>
+		 	          <li><a href="#">其他</a></li>
+			          <li><a href="#">资源</a></li>
+			      </ul>
+		   </div>
+	</div>
 		
 <h1 id="toc_1" class="justcenter">2013年5月30日 晴,周四</h1>
 <h2 id="toc_1.1" class="justcenter">心情：不美丽  原因 ：昨天谢幕的时候不大完美</h2>
 <h2 id="toc_1.2">上午</h2>
 <ul>
 <li>
-跟同事部署完新修改的项目,部署过程和测试过程都比较顺利。今天的活只剩下写文档了。
+同事部署完新修改的项目,部署过程和测试过程都比较顺利。今天的活只剩下写文档了。
 
 <li>
-<strong>新发现</strong>
+<strong>新发现</strong>  原来Vimwiki扩展性这么强哈哈 可以做到好多功能
 
 </ul>
+
+
+<h2 id="toc_1.3">下午</h2>
+<ul>
+<li>
+好吧再不动Vimwiki了 今天又花了5 hours...那个事情我自己都不好意思提了··拖了太长时间了 ，，到现在也没有开始搞 其实就一点功能而已额。
+
+<li>
+今天忘记取钱 时间真的不够用啊  看什么都得花一天时间研究清楚 ！
+
+<li>
+下午基本没做什么  跟同事商量 写正规些的部署文档
+
+</ul>
+
+<h2 id="toc_1.4">晚上</h2>
+<blockquote>
+今天晚上实在不知道写啥。。。。__ 搞了部电影看 豆瓣给分很低 但是有很喜欢的家辉兄果断还是看了。。。剧情确实老套。。。而且没有啥刺激感就不推荐去MovieHouse看了。。。
+</blockquote>
+<ul>
+<li>
+对了数据那块切过来还是很顺利的。。
+
+</ul>
+<h1 id="toc_2">可切换的待办列表项</h1>
+<ul>
+<li class="done4">
+切换列表项开/关。
+
+<ul>
+<li class="done4">
+简单的在 [ ] 和 [X] 之间切换。
+
+<li class="done4">
+所有的列表子项将被适当的切换为开/关。
+
+<li class="done4">
+仅当当前行是列表项时，切换子项。
+
+<li class="done4">
+父列表项将受子列表项的切换影响。
+
+</ul>
+<li class="done4">
+同样支持编号列表项的切换。
+
+<li class="done4">
+添加高亮到列表项的复选框。
+
+<li class="done4">
+使用 o, O 和 &lt;CR&gt; 创建新行时，新列表项会带 [ ]。(译注：&lt;CR&gt;没有带 [ ]) 
+
+</ul>
+<p>
+<sub><small> 写于2013年5月30日 PM 09:00:08 Gtc</small></sub>
+</p>
 
 	</body>
 </html>

@@ -1,40 +1,49 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="Stylesheet" type="text/css" href="style.css">
-	<link rel="Stylesheet" type="text/css" href="styles/jquery.sidr.light.css">
-	<link type="text/css" rel="stylesheet" href="/styles/shCoreMDUltra.css">
-	<script type="text/javascript" src="scripts/jquery-1.8.0.js"></script>
-	<script type="text/javascript" src="scripts/jquery.sidr.min.js"></script>
-	<script type="text/javascript" src="scripts/shCore.js"></script>
-	<script type="text/javascript" src="scripts/shBrushJScript.js"></script>	
-	<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon.png"> -->
+	<meta name="description" content="我的WIKI笔记">
+        <meta name="author" content="guotingchaopr@gmail.com">
+	<meta name="application-name" content="guotingchaopr.github.io/GWiki">
+	<link type="text/css" rel="stylesheet" href="styles/shCore.css">
+	<link type="text/css" rel="stylesheet" href="styles/shThemeDefault.css">
+	<link type="text/css" rel="stylesheet" href="styles/slider.css">
+ 	<script type="text/javascript" src="scripts/jquery.js"></script>
+ 	<script type="text/javascript" src="scripts/jquery-slider.js"></script>
+        <script type="text/javascript" src="scripts/brusy.js"></script>
 	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'http://guotingchaopr.github.io/GWiki/styles/clipboard.swf';
 		SyntaxHighlighter.defaults['gutter'] = true;
-		SyntaxHighlighter.defaults['smart-tabs'] = true;
-		SyntaxHighlighter.all();
-	        $('#responsive-menu-button').sidr({
-		   name: 'sidr-main',
-		   source: '#nav'
+	        SyntaxHighlighter.defaults['smart-tabs'] = true;
+	 	SyntaxHighlighter.all();
+                 $('document').ready(function(){
+		 	        $('#responsive-menu-button').sidr({
+		   		name: 'sidr-main',
+		   		source: '#nav'
+			 	});
 		 });
 	</script>
 	<title>首页</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
+	<body>
 	<div id="mobile-header">
-		    <a id="responsive-menu-button" href="#sidr-main">传送门</a>
-       </div>
-	<div id="nav">
-	   <div class='nav'>
-	      <ul>
-	          <li><a href="#">Home</a></li>
-	          <li><a href="#">About</a></li>
-	          <li><a href="#">Projects</a></li>
-	          <li><a href="#">Contact</a></li>
-	     </ul>
-	 <div>
-    </div>
+	    <a id="responsive-menu-button" href="#sidr-main">传送门</a>
+        </div>
+	<div id="nav" style="display:none;">
+		   <div class='nav'>
+		   	      <ul>
+		      	          <li><a href="">首页</a></li>
+		 	          <li><a href="diary/diary.html">日记目录</a></li>
+		 	          <li><a href="#">其他</a></li>
+			          <li><a href="#">资源</a></li>
+			      </ul>
+		   </div>
+	</div>
+		
 <h1 id="toc_1" class="justcenter">我的Wiki</h1>
 <h3 id="toc_1.0.1"><a href="diary/diary.html">我的日记</a></h3>
 <h5 id="toc_1.0.1.0.1">这里会记录下我工作中的每天的记录,应该是给自己看的 所以不会放什么有营养的内容。</h5>

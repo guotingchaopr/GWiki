@@ -23,10 +23,11 @@ a{
 	-webkit-transition:opacity 200ms linear;
 	-moz-transition:opacity 200ms linear;
 	transition:opacity 200ms linear;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
 
 a:hover{
-	color:#cc0000;text-decoration:underline;
+	text-decoration:none;
 	filter:alpha(opacity=1); opacity: 1;
 	-webkit-transition:opacity 200ms linear;
 	-moz-transition:opacity 200ms linear;

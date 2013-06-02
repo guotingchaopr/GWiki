@@ -5,11 +5,12 @@ body {
 	color: #333;
 	background-color: #FFF;
 	position: relative;
-	padding: 2%;
+	padding: 2%;margin:2%;
+	height:90%:
 	-moz-border-radius: 16px;
 	border-radius: 16px;
 	-webkit-border-radius: 16px;
-	border: 16px solid #c97a25;
+	border: 6px solid #c97a25;
 }
 h1, h2, h3, h4, h5, h6 {
 font-family: Trebuchet MS, Helvetica, sans-serif; font-weight: bold; line-height:100%; margin-top: 1.5em; margin-bottom: 0.5em;

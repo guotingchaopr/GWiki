@@ -1,0 +1,53 @@
+    = 2013-05-29 晴,周三= 
+    ==心情：不错 原因：今天天气不错,工作上还算OK==
+===上午===
+- 昨天计划的SnycTwitter 今天估计没有时间去做了。因为今天活儿不少。还有些没有搞定的问题
+- 上午又看了一遍jQuery源码分析 ~~具体收获以后再码出来。~~
+ 
+^现在补充：^
+    {{{ class="brush: js;" >
+      var stooge = {
+        'first-name' : 'Guo',
+        'last-name'  : 'TingChao',
+        'nickName'   : 'gtc'
+      };
+       if(type Object.beget !== 'function'){
+       		Object.beget = function(o){
+			var F = function(){};
+			F.prototype = O;
+			return new F();
+	        }  
+	}
+	var anthor = Object.beget(stooge);
+	anthor['last-name'] = 'ZiChun';
+	anthor.nickName = 'gzc';
+	console.log(anthor.nickName); // ??
+	delete anthor.nickName;
+	console.log(anthor.nickName); // ??
+    }}}
+  *知识点:*
+   # `对象字面量 :var value= {a:1,b:2};`
+   # `对象更新 Update 对象扩充 `
+   # `原型对象操作 Object.beget = function(o){}`
+   # `delete 语句操作 delete删除 可以用来删除对象的属性 它会移除对象中确定包含的属性 绝不会触及原型链中的任何对象。`
+   # `再有就是关于 "`[[http://stackoverflow.com/questions/1889260/javascript-operator?answertab=active#tab-top|!==]]`"的介绍了 这里解释的很清楚易懂`
+ 	
+
+- NBA东部 步行者赢了
+  今天[[http://zh.wikipedia.org/wiki/印第安纳步行者|步行者队 ]]赢了[[http://zh.wikipedia.org/wiki/迈阿密热火|迈阿密热火]] 没有内线的Miami节奏还是不对,NBA战术优先 再有能力的球员没有好的结构体系也是白扯。。。看了今天比赛[[http://china.nba.com/stats/league/boxscore/0041200304_00.html|数据]] 雷阿伦居然是Miami篮板最多的。。。防守也不行。the defence is the best attack!第5场看热火能否扳回一局。
+===下午===
+- 下午跟同事开了个VPS 分了个权限给他。
+- 建立账户以后忘记修改/etc/passwd/ 的shell 改成bash 搞好半天命令没法输入完整。
+- 对了建立账户以后记得把 .bascr 和 profile 文件拷贝一份过去 不然这家伙终端颜色没有办法显示。
+- 不知道为什么我的用户文件夹字体是选中的效果 而他的没有。
+  等会用root给他附个文件夹操作权限
+
+===晚上===
+ - 本来说回家开始做twitter Sync的 本地的mongo不知道为什么又断掉了 查了查日志也没分析出原因。先滞后这个问题吧  - -！！要开始做了 拖了好久了 严重拖延症啊啊啊!
+
+*做个备忘：*
+# `mongo auth  sa`
+# `mongo log   /mongodb/mongod.log`
+# `mongo db    /mongodb/db`
+
+,, 写于2013年5月29日 PM 09:58:23 Gtc,,
